@@ -55,8 +55,22 @@ in macOS Keychain; no credentials or device inventory are bundled with the app.
 Existing AI keys are migrated from preferences after a verified Keychain write.
 See [SECURITY.md](SECURITY.md) for migration failures and remote/AI trust boundaries.
 
-This is a developer beta. Build from source; public signing and notarization are
-separate release steps. Review administration commands before running them.
+This is a developer beta. Review administration commands before running them.
+
+## Download the beta
+
+Download the versioned macOS DMG and `SHA256SUMS.txt` from
+[GitHub Releases](https://github.com/bujosa/admin-manager/releases).
+The universal app supports Apple Silicon and Intel Macs running macOS 14+.
+Open the DMG and drag AdminManager to Applications. No server list or credentials
+are included. Windows and Linux support refers to remote SSH hosts; the desktop
+application runs on macOS.
+
+These developer builds are ad-hoc signed, not Apple Developer ID signed or
+notarized. macOS can block the first launch. Read the release notes and
+[Apple's guidance on opening downloaded apps](https://support.apple.com/en-us/102445).
+Only install a build whose source and checksum you trust; do not disable
+Gatekeeper globally.
 
 ## Requirements
 
