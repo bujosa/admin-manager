@@ -1,0 +1,32 @@
+ADMIN_INVENTORY_V1
+ADMIN_BLOCKS_BEGIN
+{"blockdevices":[
+ {"name":"/dev/mmcblk0","type":"disk","size":"32000000000","rota":false,"ro":false,"model":null,"tran":null,"maj:min":"179:0","mountpoints":[null],"children":[{"name":"/dev/mmcblk0p2","type":"part","size":28000000000,"fstype":"ext4","maj:min":"179:2","mountpoints":["/"]}]},
+ {"name":"/dev/sda","type":"disk","size":2000000000000,"rota":true,"ro":false,"model":"Example HDD","tran":"sata","maj:min":"8:0","children":[{"name":"/dev/sda1","type":"part","size":1999000000000,"fstype":"ext4","label":"Media library","maj:min":"8:1","mountpoints":["/media/Media library","/srv/media"]}]},
+ {"name":"/dev/nvme0n1","type":"disk","size":"1000000000000","rota":"0","ro":"0","model":"Example NVMe SSD","tran":"nvme","maj:min":"259:0","fstype":null,"mountpoints":[null]},
+ {"name":"/dev/sdb","type":"disk","size":500000000000,"rota":0,"ro":1,"model":"Example portable SSD","tran":"usb","maj:min":"8:16","fstype":"exfat","mountpoints":["/media/External SSD"]},
+ {"name":"/dev/zram0","type":"disk","size":8000000000,"rota":false,"fstype":"swap","mountpoints":["[SWAP]"]},
+ {"name":"/dev/loop0","type":"loop","size":100000000,"rota":false,"mountpoints":["/snap/example"]}
+]}
+ADMIN_BLOCKS_END
+ADMIN_VOLUMES_BEGIN
+{"filesystems":[
+ {"source":"/dev/mmcblk0p2","target":"/","fstype":"ext4","maj:min":"179:2","size":27000000000,"used":10000000000,"avail":15000000000},
+ {"source":"/dev/sda1","target":"/media/Media library","fstype":"ext4","maj:min":"8:1","size":"1900000000000","used":"700000000000","avail":"1100000000000"},
+ {"source":"/dev/sda1","target":"/srv/media","fstype":"ext4","maj:min":"8:1","size":"1900000000000","used":"700000000000","avail":"1100000000000"},
+ {"source":"/dev/sdb","target":"/media/External SSD","fstype":"exfat","maj:min":"8:16","size":490000000000,"used":100000000000,"avail":390000000000},
+ {"source":"nas.example:/share","target":"/mnt/network","fstype":"nfs4","size":null,"used":null,"avail":null},
+ {"source":"overlay","target":"/var/lib/docker/overlay2/example/merged","fstype":"overlay","size":27000000000,"used":10000000000,"avail":15000000000}
+]}
+ADMIN_VOLUMES_END
+ADMIN_RESOURCES_BEGIN
+CPU_MODEL=Example Intel Processor
+CPU_CORES=4
+MEM_TOTAL=8589934592
+MEM_AVAILABLE=5368709120
+SWAP_TOTAL=2147483648
+SWAP_FREE=1073741824
+UPTIME=345600.25
+LOAD=0.10 0.20 0.30
+ADMIN_RESOURCES_END
+ADMIN_INVENTORY_END
