@@ -1,0 +1,214 @@
+ADMIN_MAC_V1
+ADMIN_MAC_LIST_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllDisksAndPartitions</key>
+	<array>
+		<dict>
+			<key>DeviceIdentifier</key>
+			<string>disk0</string>
+			<key>Partitions</key>
+			<array>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk0s2</string>
+					<key>Size</key>
+					<integer>999000000000</integer>
+				</dict>
+			</array>
+			<key>Size</key>
+			<integer>1000000000000</integer>
+		</dict>
+		<dict>
+			<key>APFSVolumes</key>
+			<array>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk3s1</string>
+					<key>Size</key>
+					<integer>999000000000</integer>
+				</dict>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk3s2</string>
+					<key>Size</key>
+					<integer>999000000000</integer>
+				</dict>
+			</array>
+			<key>DeviceIdentifier</key>
+			<string>disk3</string>
+			<key>Size</key>
+			<integer>999000000000</integer>
+		</dict>
+		<dict>
+			<key>DeviceIdentifier</key>
+			<string>disk4</string>
+			<key>Size</key>
+			<integer>2000000000000</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
+ADMIN_MAC_LIST_END
+ADMIN_MAC_PHYSICAL_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WholeDisks</key>
+	<array>
+		<string>disk0</string>
+		<string>disk4</string>
+	</array>
+</dict>
+</plist>
+ADMIN_MAC_PHYSICAL_END
+ADMIN_MAC_APFS_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Containers</key>
+	<array>
+		<dict>
+			<key>CapacityCeiling</key>
+			<integer>999000000000</integer>
+			<key>CapacityFree</key>
+			<integer>700000000000</integer>
+			<key>ContainerReference</key>
+			<string>disk3</string>
+			<key>PhysicalStores</key>
+			<array>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk0s2</string>
+				</dict>
+			</array>
+			<key>Volumes</key>
+			<array>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk3s1</string>
+				</dict>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk3s2</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+ADMIN_MAC_APFS_END
+ADMIN_MAC_INFO_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BusProtocol</key>
+	<string>PCI-Express</string>
+	<key>DeviceIdentifier</key>
+	<string>disk0</string>
+	<key>MediaName</key>
+	<string>Internal SSD</string>
+	<key>SolidState</key>
+	<true/>
+	<key>TotalSize</key>
+	<integer>1000000000000</integer>
+	<key>WritableMedia</key>
+	<true/>
+</dict>
+</plist>
+ADMIN_MAC_INFO_END
+ADMIN_MAC_INFO_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeviceIdentifier</key>
+	<string>disk0s2</string>
+	<key>TotalSize</key>
+	<integer>999000000000</integer>
+</dict>
+</plist>
+ADMIN_MAC_INFO_END
+ADMIN_MAC_INFO_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeviceIdentifier</key>
+	<string>disk3</string>
+	<key>TotalSize</key>
+	<integer>999000000000</integer>
+	<key>VirtualOrPhysical</key>
+	<string>Virtual</string>
+</dict>
+</plist>
+ADMIN_MAC_INFO_END
+ADMIN_MAC_INFO_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CapacityInUse</key>
+	<integer>200000000000</integer>
+	<key>DeviceIdentifier</key>
+	<string>disk3s1</string>
+	<key>FilesystemType</key>
+	<string>apfs</string>
+	<key>MountPoint</key>
+	<string>/System/Volumes/Data</string>
+	<key>TotalSize</key>
+	<integer>999000000000</integer>
+</dict>
+</plist>
+ADMIN_MAC_INFO_END
+ADMIN_MAC_INFO_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CapacityInUse</key>
+	<integer>10000000000</integer>
+	<key>DeviceIdentifier</key>
+	<string>disk3s2</string>
+	<key>FilesystemType</key>
+	<string>apfs</string>
+	<key>MountPoint</key>
+	<string>/Volumes/Shared media</string>
+	<key>TotalSize</key>
+	<integer>999000000000</integer>
+</dict>
+</plist>
+ADMIN_MAC_INFO_END
+ADMIN_MAC_INFO_BEGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BusProtocol</key>
+	<string>USB</string>
+	<key>DeviceIdentifier</key>
+	<string>disk4</string>
+	<key>MediaName</key>
+	<string>External SSD</string>
+	<key>SolidState</key>
+	<true/>
+	<key>TotalSize</key>
+	<integer>2000000000000</integer>
+</dict>
+</plist>
+ADMIN_MAC_INFO_END
+ADMIN_RESOURCES_BEGIN
+CPU_MODEL=Test Apple CPU
+CPU_CORES=8
+MEM_TOTAL=17179869184
+MEM_AVAILABLE=8589934592
+SWAP_TOTAL=2147483648
+SWAP_FREE=1073741824
+LOAD=0.1 0.2 0.3
+ADMIN_RESOURCES_END
+ADMIN_MAC_END
